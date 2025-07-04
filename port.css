@@ -1,0 +1,41 @@
+/* Untuk background-overlay */
+.hero-section {
+  position: relative; /* Penting agar pseudo-element diposisikan relatif terhadap ini */
+  overflow: hidden; /* Mencegah gambar background meluap */
+  min-height: 80vh; /* Memberikan tinggi minimum untuk section */
+  display: flex; /* Menggunakan flexbox untuk memusatkan konten */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img//baner2.webp'); /* GANTI DENGAN PATH GAMBAR ANDA */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Opacity 50% */
+  z-index: 0; /* Lapisan paling bawah */
+}
+
+/* Penyesuaian z-index pada elemen yang sudah ada */
+/* Gelombang SVG sudah memiliki z-index: 10 di HTML */
+/* Konten utama sudah memiliki z-index: 20 di HTML */
+
+/* Jika Anda ingin sedikit overlay gelap di atas gambar background agar teks lebih kontras, tambahkan ini: */
+
+/* .hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  z-index: 1; 
+} */

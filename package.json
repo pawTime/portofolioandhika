@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-paw",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Static site – no build step needed'"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.11"
+  }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek: Sistem Web Kasir sembako</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: CSS kustom untuk gambar full screenshot */
+        .full-screenshot {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            border: 1px solid #e2e8f0; /* border gray-200 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center relative">
+            <a href="index.html" class="text-3xl font-extrabold text-white tracking-tight">
+                Gede pawana andhika putra</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-white hover:text-gray-600 font-medium transition duration-300">About</a>
+                <a href="#skills" class="text-white hover:text-gray-600 font-medium transition duration-300">Skills</a>
+                <a href="#projects" class="text-white hover:text-gray-600 font-medium transition duration-300">Projects</a>
+                <a href="#contact" class="bg-blue-500 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-md">Contact</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none focus:text-gray-600 transition duration-300">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg py-4 transition-all duration-300 ease-in-out origin-top scale-y-0">
+            <nav class="flex flex-col items-center space-y-4">
+                <a href="#about" class="block text-white hover:text-gray-600 font-medium transition duration-300 py-2 w-full text-center">About</a>
+                <a href="#skills" class="block text-white hover:text-gray-600 font-medium transition duration-300 py-2 w-full text-center">Skills</a>
+                <a href="#projects" class="block text-white hover:text-gray-600 font-medium transition duration-300 py-2 w-full text-center">Projects</a>
+                <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-md mt-4 w-fit">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIconOpen = document.getElementById('menu-icon-open');
+            const menuIconClose = document.getElementById('menu-icon-close');
+            const navLinks = mobileMenu.querySelectorAll('a');
+
+            mobileMenuButton.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    setTimeout(() => {
+                        mobileMenu.classList.remove('scale-y-0');
+                    }, 10); 
+                    menuIconOpen.classList.add('hidden');
+                    menuIconClose.classList.remove('hidden');
+                } else {
+                    mobileMenu.classList.add('scale-y-0');
+                    setTimeout(() => {
+                        mobileMenu.classList.add('hidden');
+                    }, 300); 
+                    menuIconOpen.classList.remove('hidden');
+                    menuIconClose.classList.add('hidden');
+                }
+            });
+
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('scale-y-0');
+                    setTimeout(() => {
+                        mobileMenu.classList.add('hidden');
+                    }, 300);
+                    menuIconOpen.classList.remove('hidden');
+                    menuIconClose.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+<main class="py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-6">
+
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Sistem Web Kasir Sembako 2024</h1>
+        <p class="text-lg text-gray-700 mb-8">
+            Proyek akademik ini berfokus pada pengembangan aplikasi kasir berbasis web yang dirancang untuk membantu pengelolaan penjualan di toko sembako, mulai dari pencatatan stok, supplier, hingga transaksi penjualan harian.
+        </p>
+
+        <div class="space-y-6 mb-12 text-gray-700">
+            <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Ringkasan Proyek</h2>
+            <p>
+                Sistem ini dibangun menggunakan teknologi web standar seperti HTML untuk struktur halaman, CSS, PHP sebagai bahasa backend untuk proses logika sistem, serta MySQL untuk menyimpan data seperti produk, pemasok, dan transaksi penjualan.
+            </p>
+            <p>
+                Tujuan utama dari sistem ini adalah memberikan solusi digital yang efisien untuk toko sembako skala kecil hingga menengah. Dengan sistem ini, pemilik toko dapat memantau stok barang, mencatat pemasukan dan pengeluaran, serta mengelola data pemasok dengan lebih rapi dan cepat.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Fitur Utama</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Dashboard Interaktif: Menampilkan ringkasan transaksi, stok, dan informasi penting lainnya secara real-time.</li>
+                <li>Manajemen Supplier: Mencatat dan mengelola data pemasok sembako seperti beras, minyak, gula, dan lainnya.</li>
+                <li>Manajemen Bahan Baku/Stok: Input dan pengelolaan berbagai item sembako beserta jumlah stok yang tersedia.</li>
+                <li>Transaksi Penjualan: Proses penjualan yang mudah, mencakup produk, jumlah, harga, dan total pembayaran.</li>
+                <li>Laporan Stok & Transaksi: Menyediakan laporan stok dan rekap penjualan harian/mingguan/bulanan.</li>
+                <li>Antarmuka Responsif: Desain web menyesuaikan dengan berbagai perangkat, dari desktop hingga smartphone.</li>
+                <li>Login Admin: Sistem autentikasi dengan akses khusus untuk admin toko.</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Teknologi yang Digunakan</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Frontend: HTML5, CSS, JavaScript</li>
+                <li>Backend: PHP</li>
+                <li>Database: MySQL</li>
+                <li>Tools: XAMPP, Visual Studio Code</li>
+            </ul>
+        </div>
+
+        <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-8 text-center">Tampilan Lengkap Proyek</h2>
+        <div class="mb-12">
+            <img src="img//project/loginsem.png" alt="Tampilan Login Sistem Kasir Sembako" class="full-screenshot">
+            <img src="img//project/dashboardsem.png" alt="Dashboard Sistem Kasir Sembako" class="full-screenshot">
+            <img src="img//project/supliersem.png" alt="Halaman Supplier Sistem Kasir Sembako" class="full-screenshot">
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="index.html#projects" class="inline-block bg-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-800 transition duration-300 shadow-md">
+                Kembali ke Portofolio
+            </a>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="bg-gray-800 text-gray-300 pt-12 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
+
+    <div>
+      <h3 class="text-3xl font-extrabold text-white mb-4">
+        Gede pawana andhika putra</span>
+      </h3>
+      <p class="text-sm leading-relaxed mb-4">
+        Mahasiswa Manajemen Informatika dengan ketertarikan pada pengembangan sistem dan aplikasi. Siap berkolaborasi untuk proyek-proyek inovatif.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-3">Navigasi</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#hero" class="hover:underline text-gray-400 hover:text-white transition-colors">Beranda</a></li>
+        <li><a href="#about" class="hover:underline text-gray-400 hover:text-white transition-colors">Tentang Saya</a></li>
+        <li><a href="#skills" class="hover:underline text-gray-400 hover:text-white transition-colors">Keterampilan</a></li>
+        <li><a href="#projects" class="hover:underline text-gray-400 hover:text-white transition-colors">Proyek</a></li>
+        <li><a href="#education" class="hover:underline text-gray-400 hover:text-white transition-colors">Pendidikan</a></li>
+        <li><a href="#organization" class="hover:underline text-gray-400 hover:text-white transition-colors">Organisasi</a></li>
+        <li><a href="#contact" class="hover:underline text-gray-400 hover:text-white transition-colors">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-3">Fokus Studi</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Pemrograman Web</li>
+        <li>Basis Data</li>
+        <li>Mobile Programming</li>
+        <li>Teknologi Cloud</li>
+        <li>Jaringan Komputer</li>
+        <li>Desain Grafis</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-3">Hubungi Saya</h4>
+      <ul class="space-y-2 text-sm">
+        <li><span class="font-semibold">Lokasi:</span> Denpasar, Bali</li>
+        <li><span class="font-semibold">Email:</span> <a href="mailto:gedepawana9@gmail.com" class="hover:underline text-gray-400 hover:text-white transition-colors">gedepawana9@gmail.com</a></li>
+        <li><span class="font-semibold">Telepon:</span> <a href="https://wa.me/6282146130963" class="hover:underline text-gray-400 hover:text-white transition-colors">+62 821-4613-0963</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+    <p>&copy; 2024 Gede pawana andhika putra. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

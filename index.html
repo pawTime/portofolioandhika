@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Saya</title>
+  <link href="output.css" rel="stylesheet">
+  <link href="port.css" rel="stylesheet">
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center relative">
+    <a href="#" class="text-3xl font-extrabold text-white tracking-tight">
+      Gede pawana andhika putra </span>
+    </a>
+
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="#about" class="text-white hover:text-gray-600 font-medium transition duration-300">About</a>
+      <a href="#skills" class="text-white hover:text-gray-600 font-medium transition duration-300">Skills</a>
+      <a href="#projects" class="text-white hover:text-gray-600 font-medium transition duration-300">Projects</a>
+      <a href="#contact" class="bg-blue-500 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-md">Contact</a>
+    </nav>
+
+    <div class="md:hidden flex items-center">
+      <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:text-gray-600 transition duration-300">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg py-4 transition-all duration-300 ease-in-out origin-top scale-y-0">
+    <nav class="flex flex-col items-center space-y-4">
+      <a href="#about" class="block text-white hover:text-gray-600 font-medium transition duration-300 py-2 w-full text-center">About</a>
+      <a href="#skills" class="block text-white hover:text-gray-600 font-medium transition duration-300 py-2 w-full text-center">Skills</a>
+      <a href="#projects" class="block text-white hover:text-gray-600 font-medium transition duration-300 py-2 w-full text-center">Projects</a>
+      <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-md mt-4 w-fit">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero-section relative pt-20 pb-12" id="hero">
+  <div class="background-overlay absolute inset-0 z-0"></div>
+
+  <div class="absolute bottom-0 left-0 right-0 z-10">
+    <svg class="w-full h-auto" viewBox="0 0 1440 320">
+      <path fill="#f9fafb" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,149.3C640,128,800,96,960,96C1120,96,1280,128,1360,144L1440,160V320H0Z"></path>
+    </svg>
+  </div>
+
+  <div class="relative z-20 max-w-6xl mx-auto px-6 flex flex-col items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+        I’m IT Student <br> <span class="text-gray-700">Gede pawana andhika putra</span>
+      </h1>
+      <p class="text-gray-700 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
+        Mahasiswa semester 4 D3 Manajemen Informatika di Politeknik Negeri Bali.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center gap-4 justify-center">
+        <a href="#contact" class="bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition duration-300 transform hover:scale-105">Learn More</a>
+        <a href="#projects" class="border bg-gray-300 px-8 py-4 rounded-lg font-semibold text-gray-700 hover:bg-gray-100 transition duration-300 transform hover:scale-105">Hire Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- About Section -->
+  <section class="py-20 bg-gray-50" id="about">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        
+        <!-- Konten Teks -->
+        <div class="relative rounded-lg shadow-xl overflow-hidden md:order-last">
+        <img src="img//pawana.png" alt="Ida Ayu Rhena" class="object-cover w-full h-full rounded-lg">
+        <div class="absolute bottom-4 right-4 bg-white bg-opacity-70 backdrop-blur-sm text-blue-800 font-semibold px-4 py-2 rounded-md shadow-sm">
+            Gede pawana andhika putra
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-4xl font-bold text-gray-900 mb-6">
+            <span class="text-blue-600">Tentang</span> Saya - Pawana.
+        </h3>
+        <p class="text-gray-700 leading-relaxed mb-6">
+            Halo! Saya Gede pawana andhika putra, seorang Mahasiswa semester 4 di program studi D3 Manajemen Informatika, Politeknik Negeri Bali. Saya memiliki antusiasme yang besar terhadap dunia teknologi informasi, terutama dalam pengembangan sistem dan aplikasi yang inovatif.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-8">
+            Dengan pemahaman yang kuat dalam dasar-dasar pemrograman, pengelolaan basis data, dan perancangan sistem, saya juga dilengkapi dengan soft skill yang esensial seperti komunikasi efektif, kolaborasi tim yang solid, dan manajemen waktu yang baik. Saat ini, saya sangat bersemangat untuk mencari kesempatan magang di semester 5, di mana saya dapat mengaplikasikan pengetahuan teoritis dan mengembangkan keterampilan praktis di lingkungan teknologi informasi yang dinamis.
+        </p>
+        <a href="img/Gede_pawana_andhika_putra_CV1.pdf" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors font-semibold shadow-md">
+            Unduh CV
+            <svg class="inline-block w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-white" id="education">
+  <div class="max-w-6xl mx-auto px-6">
+    <h4 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-gray-900 flex items-center justify-center gap-3">
+        Pendidikan
+    </h4>
+    
+
+    <div class="relative space-y-12">
+      <div class="absolute hidden md:block h-full border-l-2 border-gray-300 left-1/2 transform -translate-x-1/2"></div>
+
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between md:space-x-12">
+        <div class="md:w-1/2 md:text-right relative">
+          <div class="relative z-10 p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform md:hover:-translate-x-2">
+            <h4 class="text-2xl font-semibold text-gray-900 mb-2">Politeknik Negeri Bali</h4>
+            <p class="text-blue-600 font-medium mb-1">D3 Manajemen Informatika</p>
+            <p class="text-gray-600 mb-2">2023 – Sekarang</p>
+            <p class="text-gray-700">IPK Saat ini: <span class="font-bold text-lg">3.57</span></p>
+            <p class="text-gray-700 mt-2 text-sm">
+              <span class="font-semibold">Mata Kuliah Relevan:</span> Basis Data, Desain Grafis, Jaringan Komputer, Pemrograman Web, Mobile Programming, Teknologi Cloud, Multimedia.
+            </p>
+          </div>
+          <div class="hidden md:block absolute w-4 h-4 bg-teal-600 rounded-full border-4 border-white top-1/2 transform -translate-y-1/2 translate-x-1/2 right-0 z-20"></div>
+        </div>
+        <div class="md:w-1/2 hidden md:block"></div> </div>
+
+      <div class="flex flex-col md:flex-row-reverse items-start md:items-center justify-between md:space-x-12">
+        <div class="md:w-1/2 md:text-left relative">
+          <div class="relative z-10 p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform md:hover:translate-x-2">
+            <h4 class="text-2xl font-semibold text-gray-900 mb-2">SMK Negeri 1 KUTA SELATAN</h4>
+            <p class="text-blue-600 font-medium mb-1">Jurusan Teknologi Jaringan Komputer (TKJ)</p>
+            <p class="text-gray-600">2020 – 2023</p>
+          </div>
+          <div class="hidden md:block absolute w-4 h-4 bg-teal-600 rounded-full border-4 border-white top-1/2 transform -translate-y-1/2 -translate-x-1/2 left-0 z-20"></div>
+        </div>
+        <div class="md:w-1/2 hidden md:block"></div> </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills Section -->
+  <section class="bg-gray-100 py-20" id="skills">
+  <div class="max-w-5xl mx-auto px-9">
+        <!-- Hard Skills -->
+        <div class="container mx-auto px-4 py-12">
+    <h4 class="text-3xl md:text-5xl font-extrabold mb-10 text-center text-gray-900 flex items-center justify-center gap-3">
+        Hard Skills
+    </h4>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-6 justify-items-center">
+
+        <div class="flex flex-col items-center w-36 p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100 group">
+        <div class="w-20 h-20 mb-3 flex items-center justify-center bg-red-50 bg-opacity-70 rounded-full transition-colors duration-300 group-hover:bg-red-100">
+            <img src="img/icon/html-5.png" alt="HTML Icon" class="w-14 h-14 object-contain transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <h3 class="font-bold text-center text-gray-800 text-base">HTML</h3>
+        </div>
+
+        <div class="flex flex-col items-center w-36 p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100 group">
+        <div class="w-20 h-20 mb-3 flex items-center justify-center bg-blue-50 bg-opacity-70 rounded-full transition-colors duration-300 group-hover:bg-blue-100">
+            <img src="img/icon/css-3.png" alt="CSS Icon" class="w-14 h-14 object-contain transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <h3 class="font-bold text-center text-gray-800 text-base">CSS</h3>
+        </div>
+
+        <div class="flex flex-col items-center w-36 p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100 group">
+        <div class="w-20 h-20 mb-3 flex items-center justify-center bg-yellow-50 bg-opacity-70 rounded-full transition-colors duration-300 group-hover:bg-yellow-100">
+            <img src="img/icon/js.png" alt="JS Icon" class="w-14 h-14 object-contain transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <h3 class="font-bold text-center text-gray-800 text-base">JS</h3>
+        </div>
+
+        <div class="flex flex-col items-center w-36 p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100 group">
+        <div class="w-20 h-20 mb-3 flex items-center justify-center bg-purple-50 bg-opacity-70 rounded-full transition-colors duration-300 group-hover:bg-purple-100">
+            <img src="img/icon/programing.png" alt="PHP Icon" class="w-14 h-14 object-contain transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <h3 class="font-bold text-center text-gray-800 text-base">PHP</h3>
+        </div>
+
+        <div class="flex flex-col items-center w-36 p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100 group">
+        <div class="w-20 h-20 mb-3 flex items-center justify-center bg-orange-50 bg-opacity-70 rounded-full transition-colors duration-300 group-hover:bg-orange-100">
+            <img src="img/icon/database.png" alt="MySQL Icon" class="w-14 h-14 object-contain transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <h3 class="font-bold text-center text-gray-800 text-base">MySQL</h3>
+        </div>
+
+        <div class="flex flex-col items-center w-36 p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100 group">
+        <div class="w-20 h-20 mb-3 flex items-center justify-center bg-pink-50 bg-opacity-70 rounded-full transition-colors duration-300 group-hover:bg-pink-100">
+            <img src="img/icon/palette.png" alt="Canva Icon" class="w-14 h-14 object-contain transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <h3 class="font-bold text-center text-gray-800 text-base">Canva</h3>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    <!-- Soft Skills -->
+  <div class="container mx-auto px-4 py-12">
+  <h4 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-gray-900 flex items-center justify-center gap-3">
+    Soft Skills
+  </h4>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100">
+      <div class="mb-4 bg-blue-100 rounded-full p-3 flex items-center justify-center">
+        <img src="img//icon/united.png" alt="Teamwork Icon" class="w-12 h-12 object-contain">
+      </div>
+      <div class="w-full text-center">
+        <div class=" justify-between items-end text-lg mb-2">
+          <span class="font-bold text-gray-800">Kerja Mandiri & Tim</span>
+          <span class="text-blue-600 font-semibold">90%</span>
+        </div>
+        <div class="bg-gray-200 rounded-full h-3 w-full relative overflow-hidden">
+          <div class="bg-gradient-to-r from-blue-400 to-blue-600 h-full rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100">
+      <div class="mb-4 bg-purple-100 rounded-full p-3 flex items-center justify-center">
+        <img src="img//icon/interaction.png" alt="Communication Icon" class="w-12 h-12 object-contain">
+      </div>
+      <div class="w-full text-center">
+        <div class=" justify-between items-end text-lg mb-2">
+          <span class="font-bold text-gray-800">Komunikasi</span>
+          <span class="text-purple-600 font-semibold">85%</span>
+        </div>
+        <div class="bg-gray-200 rounded-full h-3 w-full relative overflow-hidden">
+          <div class="bg-gradient-to-r from-purple-400 to-purple-600 h-full rounded-full" style="width: 85%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100">
+      <div class="mb-4 bg-green-100 rounded-full p-3 flex items-center justify-center">
+        <img src="img//icon/king.png" alt="Leadership Icon" class="w-12 h-12 object-contain">
+      </div>
+      <div class="w-full text-center">
+        <div class=" justify-between items-end text-lg mb-2">
+          <span class="font-bold text-gray-800">Kepemimpinan</span>
+          <span class="text-green-600 font-semibold">75%</span>
+        </div>
+        <div class="bg-gray-200 rounded-full h-3 w-full relative overflow-hidden">
+          <div class="bg-gradient-to-r from-green-400 to-green-600 h-full rounded-full" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100">
+      <div class="mb-4 bg-yellow-100 rounded-full p-3 flex items-center justify-center">
+        <img src="img//icon/time-management.png" alt="Time Icon" class="w-12 h-12 object-contain">
+      </div>
+      <div class="w-full text-center">
+        <div class=" justify-between items-end text-lg mb-2">
+          <span class="font-bold text-gray-800">Manajemen Waktu</span>
+          <span class="text-yellow-600 font-semibold">80%</span>
+        </div>
+        <div class="bg-gray-200 rounded-full h-3 w-full relative overflow-hidden">
+          <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 h-full rounded-full" style="width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100">
+      <div class="mb-4 bg-red-100 rounded-full p-3 flex items-center justify-center">
+        <img src="img//icon/discipline.png" alt="Discipline Icon" class="w-12 h-12 object-contain">
+      </div>
+      <div class="w-full text-center">
+        <div class=" justify-between items-end text-lg mb-2">
+          <span class="font-bold text-gray-800">Disiplin</span>
+          <span class="text-red-600 font-semibold">90%</span>
+        </div>
+        <div class="bg-gray-200 rounded-full h-3 w-full relative overflow-hidden">
+          <div class="bg-gradient-to-r from-red-400 to-red-600 h-full rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100">
+      <div class="mb-4 bg-red-100 rounded-full p-3 flex items-center justify-center">
+        <img src="img/icon/responsibility.png" alt="Discipline Icon" class="w-12 h-12 object-contain">
+      </div>
+      <div class="w-full text-center">
+        <div class=" justify-between items-end text-lg mb-2">
+          <span class="font-bold text-gray-800">Tanggung Jawab</span>
+          <span class="text-gray-600 font-semibold">70%</span>
+        </div>
+        <div class="bg-gray-200 rounded-full h-3 w-full relative overflow-hidden">
+          <div class="bg-gradient-to-r from-gray-400 to-gray-600 h-full rounded-full" style="width: 70%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+
+
+
+  <!-- Projects Section -->
+  <section class="py-24 bg-gray-50" id="projects">
+  <div class="max-w-6xl mx-auto px-4">
+    <h4 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-gray-900 flex items-center justify-center gap-3">
+        Project
+    </h4>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-2 justify-items-center">
+
+      <a href="project-laundry.html" class="block w-full bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100">
+        <div class="relative overflow-hidden pt-6 pb-2 px-2 bg-gray-100 rounded-t-xl border-b border-gray-200">
+          <img src="img//project/1.png" alt="Sistem Web Kasir sembako Thumbnail" class="w-full h-auto rounded-b-lg">
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2 text-gray-900 group-hover:text-blue-600 transition duration-200">
+            Sistem Web Kasir Sembako 2024 – Proyek Akademik
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Saya membangun aplikasi kasir berbasis web menggunakan HTML, CSS, PHP, dan MySQL yang dirancang untuk memudahkan pengelolaan toko sembako. Aplikasi ini memiliki fitur utama seperti manajemen stok bahan pokok, data supplier, pencatatan transaksi penjualan, serta laporan stok dan penjualan.
+          </p>
+        </div>
+      </a>
+
+      <a href="project-penduduk.html" class="block w-full bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-100">
+        <div class="relative overflow-hidden pt-6 pb-2 px-2 bg-gray-100 rounded-t-xl border-b border-gray-200">
+          <img src="img//project/loginpaw.png" alt="Sistem Pendataan Penduduk Thumbnail" class="w-full h-auto rounded-b-lg">
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2 text-gray-900 group-hover:text-blue-600 transition duration-200">Sistem Pendataan Penduduk Berbasis Web 2024 - Proyek Akademik</h3>
+          <p class="text-gray-600 text-sm">Saya juga mengembangkan sistem pendataan penduduk pendatang berbasis web yang ditujukan untuk keperluan RT/RW atau kelurahan. Sistem ini dilengkapi dengan form input data, status verifikasi pendatang, serta integrasi peta lokasi menggunakan Leaflet.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 bg-gray-50" id="contact">
+  <div class="max-w-6xl mx-auto px-6">
+    <h4 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-gray-900 flex items-center justify-center gap-3">
+        Contact Us
+    </h4>
+
+    <div class="flex flex-wrap justify-center gap-8">
+
+      <!-- <a href="https://www.linkedin.com/in/luh-kadek-anisa-ayu-dwiyanti-084223312" target="_blank" class="block w-full sm:w-1/2 lg:w-1/4 p-8  rounded-lg flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 text-center">
+        <div class="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+          <img src="img//icon/linkedin.png" alt="LinkedIn Icon" class="w-10 h-10"> </div>
+        <h4 class="text-xl font-semibold text-gray-900 mb-2">LinkedIn</h4>
+        <p class="text-gray-700 leading-relaxed underline">Profil LinkedIn</p>
+      </a> -->
+
+      <a href="mailto:gedepawana9@gmail.com" class="block w-full sm:w-1/2 lg:w-1/4 p-8 rounded-lg flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 text-center">
+        <div class="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+          <img src="img//icon/communication.png" alt="Email Icon" class="w-10 h-10">
+        </div>
+        <h4 class="text-xl font-semibold text-gray-900 mb-2">Email</h4>
+        <p class="text-gray-700 leading-relaxed underline">gedepawana9@gmail.com</p>
+      </a>
+
+      <a href="https://wa.me/6282146130963" target="_blank" class="block w-full sm:w-1/2 lg:w-1/4 p-8 rounded-lg flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 text-center">
+        <div class="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+          <img src="img//icon/whatsapp (2).png" alt="Phone Icon" class="w-10 h-10">
+        </div>
+        <h4 class="text-xl font-semibold text-gray-900 mb-2">Telepon/WhatsApp</h4>
+        <p class="text-gray-700 leading-relaxed underline">+62 821-4613-0963</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="bg-gray-800 text-gray-300 pt-12 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
+
+    <div>
+      <h3 class="text-3xl font-extrabold text-white mb-4">
+        Gede pawana andhika</span>
+      </h3>
+      <p class="text-sm leading-relaxed mb-4">
+        Mahasiswa Manajemen Informatika dengan ketertarikan pada pengembangan sistem dan aplikasi. Siap berkolaborasi untuk proyek-proyek inovatif.
+      </p>
+      <!-- <div class="flex gap-4 justify-center md:justify-start mt-4">
+        <a href="https://www.linkedin.com/in/luh-kadek-anisa-ayu-dwiyanti-084223312" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">
+        <img src="img//icon/linkedin.png" alt="LinkedIn Icon" class="w-10 h-10"></img>
+        </a>
+        </div> -->
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-3">Navigasi</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#hero" class="hover:underline text-gray-400 hover:text-white transition-colors">Beranda</a></li>
+        <li><a href="#about" class="hover:underline text-gray-400 hover:text-white transition-colors">Tentang Saya</a></li>
+        <li><a href="#skills" class="hover:underline text-gray-400 hover:text-white transition-colors">Keterampilan</a></li>
+        <li><a href="#projects" class="hover:underline text-gray-400 hover:text-white transition-colors">Proyek</a></li>
+        <li><a href="#education" class="hover:underline text-gray-400 hover:text-white transition-colors">Pendidikan</a></li>
+        <li><a href="#organization" class="hover:underline text-gray-400 hover:text-white transition-colors">Organisasi</a></li>
+        <li><a href="#contact" class="hover:underline text-gray-400 hover:text-white transition-colors">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-3">Fokus Studi</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Pemrograman Web</li>
+        <li>Basis Data</li>
+        <li>Mobile Programming</li>
+        <li>Teknologi Cloud</li>
+        <li>Jaringan Komputer</li>
+        <li>Desain Grafis</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-3">Hubungi Saya</h4>
+      <ul class="space-y-2 text-sm">
+        <li><span class="font-semibold">Lokasi:</span> Denpasar, Bali</li>
+        <li><span class="font-semibold">Email:</span> <a href="mailto:gedepawana9@gmail.com" class="hover:underline text-gray-400 hover:text-white transition-colors">gedepawana9@gmail.com</a></li>
+        <li><span class="font-semibold">Telepon:</span> <a href="https://wa.me/6282146130963" class="hover:underline text-gray-400 hover:text-white transition-colors">+62 821-4613-0963</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+    <p>&copy; 2024 Gede pawana andhika putra. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconOpen = document.getElementById('menu-icon-open');
+    const menuIconClose = document.getElementById('menu-icon-close');
+    const navLinks = mobileMenu.querySelectorAll('a');
+
+    mobileMenuButton.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        setTimeout(() => {
+          mobileMenu.classList.remove('scale-y-0');
+        }, 10); // Small delay for transition to work
+        menuIconOpen.classList.add('hidden');
+        menuIconClose.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('scale-y-0');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300); // Wait for transition to finish before hiding
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      }
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('scale-y-0');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
